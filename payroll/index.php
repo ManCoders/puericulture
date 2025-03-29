@@ -17,11 +17,13 @@ isset($_SESSION["user_id"]) ? $users_id = $_SESSION["user_id"] : "no user_id";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payroll Dashboard</title>
     <link rel="stylesheet" href="./assets/css/text.css">
-    <script src="./assets/npm/charts.js"></script>
+    <script src="./assets/npm/chart.js"></script>
 </head>
 
 <body>
-    <?php include "navbar.php"; ?>
+    <?php 
+    include "navbar.php"; 
+    ?>
     
     <main id="view-panel" >
       <?php $page = isset($_GET['page']) ? $_GET['page'] :'home'; ?>

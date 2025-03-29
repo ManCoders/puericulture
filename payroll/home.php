@@ -1,5 +1,4 @@
 <?php include "header.php" ?>
-
 <div class="main">
     <script src="./assets/npm/chart.js"></script>
     <h4 style="margin: 20px; font-size: 2rem;">Summary Report</h4>
@@ -23,5 +22,5 @@
     <a class="print-dashboard-report" href="" >Print Yearly Report</a>
     </div>
 
-    <script src="./assets/js/custom-script.js"></script>
+    
 </div>
