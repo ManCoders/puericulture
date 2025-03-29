@@ -16,7 +16,7 @@
                     <span>Salary Reports</span>
                 </a>
                 <a href="index.php?page=employee" class="nav-employee">
-                    <span>Files 201</span>
+                    <span>Management</span>
                 </a>
                 <a href="index.php?page=setting" class="nav-setting">
                     <span>Setting</span>
@@ -33,15 +33,12 @@
 
 
 <script>
-
 $('.nav-<?php echo $_GET['page'] ?>').addClass('active');
-$('.nav-<?php echo $_GET['page'] ?>').css('background-color', '#007bff');
-$('.nav-<?php echo $_GET['page'] ?>').css('color', '#fff');
 
-$('.nav-item').click(function() {
-    $('.nav-item').removeClass('active');
+$('.nav a').click(function() {
+    $('.nav a').removeClass('active');
     $(this).addClass('active');
-    $(this).css('background-color', '#007bff');
+    $(this).css('background-color', '#d10101');
     $(this).css('color', '#fff');
     $(this).siblings().css('background-color', '');
     $(this).siblings().css('color', '');

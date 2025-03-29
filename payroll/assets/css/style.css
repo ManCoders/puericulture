@@ -38,7 +38,7 @@ main{
     padding: 1rem;
     color: #fff;
     /* background-color: #6b6969; */
-    width: 13.5rem;
+    width: 13.8rem;
     display: flex;
     justify-content: center;
     margin: .2rem;
@@ -46,11 +46,15 @@ main{
 }
 
 #sidebar .logo {
-    width: 85%;
+    width: 90%;
     display: flex;
     padding: 20px;
     justify-content: center;
     /* background-color: #6b6969; */
+}
+
+.nav a:hover{
+    background-color: #e10000;
 }
 
 
@@ -65,6 +69,14 @@ main{
     gap:300px;
      margin-left:40px;
 }
+
+.charts
+{
+    display:flex; 
+    gap:60px; 
+    margin:20px;
+}
+
 
 
 .nav-profile{
