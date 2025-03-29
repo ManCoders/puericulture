@@ -2,7 +2,7 @@
 
 require_once '../include/session.php';
 
-isset($_SESSION["user_id"]) ? $users_id = $_SESSION["user_id"] : "no user_id";
+isset($_SESSION["user_id"]) ? $users_id = $_SESSION["user_id"] : "header('location:../index.php')";
 
 ?>
 
@@ -16,9 +16,8 @@ isset($_SESSION["user_id"]) ? $users_id = $_SESSION["user_id"] : "no user_id";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payroll Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/text.css">
-    <script src="./assets/npm/chart.js"></script>
-</head>
+
+  </head>
 
 <body>
     <?php 
@@ -27,9 +26,9 @@ isset($_SESSION["user_id"]) ? $users_id = $_SESSION["user_id"] : "no user_id";
     
     <main id="view-panel" >
       <?php $page = isset($_GET['page']) ? $_GET['page'] :'home'; ?>
-      	<?php include $page.'.php' ?>
-  </main>
-    
+      	<?php include 'pages/'.$page.'.php' ?>
+    </main>
+    <?php include "header.php" ?>
 
 
 
