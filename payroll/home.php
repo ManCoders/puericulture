@@ -1,8 +1,8 @@
 <?php include "header.php" ?>
 
 <div class="main">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <h4 style="margin: 20px;">Summary Report</h4>
+    <script src="./assets/npm/chart.js"></script>
+    <h4 style="margin: 20px; font-size: 2rem;">Summary Report</h4>
     <div class="charts" >
         
         <div><canvas id="myChart1" width="300px" height="300px"></canvas></div>
@@ -31,7 +31,7 @@
             data: {
                 labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
                 datasets: [{
-                    label: 'Weekly Incomes',
+                    label: 'Weekly Reports',
                     data: [12, 19, 3, 5, 2, 3],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
@@ -66,11 +66,11 @@
         // Chart 2
         var ctx2 = document.getElementById('myChart2').getContext('2d');
         var chart2 = new Chart(ctx2, {
-            type: 'line',
+            type: 'bar',
             data: {
                 labels: ['January', 'February', 'March', 'April', 'May', 'June'],
                 datasets: [{
-                    label: 'Monthly Incomes',
+                    label: 'Monthly Reports',
                     data: [12, 19, 3, 5, 2, 3],
                     backgroundColor: 'rgba(255, 99, 132, 0.2)',
                     borderColor: 'rgba(255, 99, 132, 1)',
@@ -91,11 +91,11 @@
     // Chart 1
     var ctx = document.getElementById('myChart3').getContext('2d');
         var chart1 = new Chart(ctx, {
-            type: 'radar',
+            type: 'bar',
             data: {
                 labels: ['2020', '2021', '2022', '2023', '2024', '2025'],
                 datasets: [{
-                    label: 'Yearly Incomes',
+                    label: 'Yearly Reports  ',
                     data: [12, 19, 3, 5, 2, 3],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
