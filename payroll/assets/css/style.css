@@ -31,7 +31,6 @@ nav{
 
 .nav-item {
     padding: 15px;
-    width: 100%;
     cursor: pointer;
    
 }
@@ -39,7 +38,6 @@ nav{
 .nav-item:active {
     background-color: #df4141;
     border-radius: 10px;
-    width: 12rem;
 }
 
 
@@ -48,8 +46,9 @@ nav{
     font-size: 19px;
     font-weight: bold;
     text-decoration: none;
-    padding: 23px;
 }
+
+
 
 .nav_main_bar{
     width: 230px;
@@ -106,7 +105,8 @@ main{
 
 .dashboard-report{
     padding:10px;
-     margin-top:50px;
+     margin-top:170px;
+     overflow: hidden;
      background-color:grey;
 }
 
@@ -114,7 +114,14 @@ main{
     margin-right: 100px; 
     color:#ffffff; 
     font-weight: 800;
+    background-color: #c40101;
+    padding: .5rem;
+    border-radius: 10px;
     text-decoration: none; 
+}
+
+.print-dashboard-report:hover{
+    background-color: #9f0606;
 }
 
 /**************************** DASHBOARD END LAYOUT ***************************************** */
