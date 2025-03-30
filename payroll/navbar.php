@@ -4,7 +4,7 @@
 <div class="nav_main_bar">
     <nav class="nav" id="sidebar">
         <div class="logo"> 
-            <img style="width:100px; border-radius:50%;" src="./assets/images/puericulture_logo.jpg" alt="Logo">
+            <img style="width:100px; border-radius:50%;" src="./assets/images/.png" alt="Logo">
         </div>
         
         <?php $page = isset($_GET['page']) ? $_GET['page'] : 'home'; ?>
