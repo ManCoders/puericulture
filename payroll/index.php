@@ -1,10 +1,3 @@
-<?php
-
-require_once '../include/session.php';
-
-isset($_SESSION["user_id"]) ? $users_id = $_SESSION["user_id"] : "header('location:../index.php')";
-
-?>
 
 
 
@@ -21,13 +14,16 @@ isset($_SESSION["user_id"]) ? $users_id = $_SESSION["user_id"] : "header('locati
 
 <body>
     <?php 
-    include "navbar.php"; 
+    include "./auth.php";
+    include "./navbar.php"; 
     ?>
     
     <main id="view-panel" >
       <?php $page = isset($_GET['page']) ? $_GET['page'] :'home'; ?>
       	<?php include 'pages/'.$page.'.php' ?>
     </main>
+
+    
     <?php include "header.php" ?>
 
 

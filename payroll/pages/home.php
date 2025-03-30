@@ -15,10 +15,15 @@
    </section>
 
    <div class="dashboard-report" >
-    <a class="print-dashboard-report" href="" >Print Weekly Report</a>
-    <a class="print-dashboard-report" href="" >Print Monthly Report</a>
-    <a class="print-dashboard-report" href="" >Print Yearly Report</a>
+    <select class="print-dashboard-report">
+        <option value="">Select Report</option>
+        <option value="weekly">Print Weekly Report</option>
+        <option value="monthly">Print Monthly Report</option>
+        <option value="yearly">Print Yearly Report</option>
+    </select>
+    <button class="print-dashboard-report" onclick="printReport()">Print</button>
     </div>
+</div>
     <?php include "./header.php" ?>
     
 </div>

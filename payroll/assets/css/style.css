@@ -30,32 +30,7 @@ main{
 
 /**************************** SIDEBAR NAVIGATION START LAYOUT ***************************************** */
 
-#sidebar{
-    font-size: 1.3rem;
-}
 
-#sidebar a{
-    padding: 1rem;
-    color: #fff;
-    /* background-color: #6b6969; */
-    width: 13.8rem;
-    display: flex;
-    justify-content: center;
-    margin: .2rem;
-    text-decoration: none;
-}
-
-#sidebar .logo {
-    width: 90%;
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    /* background-color: #6b6969; */
-}
-
-.nav a:hover{
-    background-color: #e10000;
-}
 
 
 

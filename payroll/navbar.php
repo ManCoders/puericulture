@@ -1,10 +1,10 @@
-<!-- <?php include "header.php" ?> -->
+<?php include "header.php" ?>
 <link rel="stylesheet" href="./assets/css/style.css">
 
 <div class="nav_main_bar">
     <nav class="nav" id="sidebar">
         <div class="logo"> 
-            <img style="width:100px; border-radius:50%;" src="./assets/images/puericulture_logo.jpg" alt="Logo">
+            <img class="img-logo" style="width:150px;" src="./assets/images/pueri-logo.png" alt="Logo">
         </div>
         
         <?php $page = isset($_GET['page']) ? $_GET['page'] : 'home'; ?>
@@ -19,7 +19,7 @@
             <span>Salary Reports</span>
         </a>
         <a href="index.php?page=employee" class="nav-item nav-employee <?= ($page == 'employee') ? 'active' : '' ?>">
-            <span>Management</span>
+            <span>HR Management</span>
         </a>
         <a href="index.php?page=setting" class="nav-item nav-setting <?= ($page == 'setting') ? 'active' : '' ?>">
             <span>Setting</span>
@@ -53,5 +53,9 @@ $(document).ready(function () {
 .nav-item.active {
     background-color:rgb(158, 4, 4) !important;
     color: white !important;
+}
+
+.img-logo{
+   filter: drop-shadow(0 0 3px rgb(233, 225, 225));
 }
 </style>
